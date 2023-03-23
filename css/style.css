@@ -1,0 +1,255 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e1e5e7;
+    font-family: 'Inter', sans-serif;
+}
+
+.center {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.cabecalho {
+    margin-top: 20px;
+}
+
+.cabecalho2 img {
+    margin-top: 20px;
+}
+
+.cabecalho2 {
+    background-color: #004348;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.botao {
+    font-size: 24px;
+    text-decoration: none;
+    background-image: linear-gradient(-135deg, #1dc98a, #036970);
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 6px;
+    color: white;
+    transition: 0.5s;
+
+}
+
+.botao:hover {
+    padding: 8px 25px;
+}
+
+.info-cabecalho {
+    margin-top: 15px;
+}
+
+
+
+.table {
+    border-radius: 6px;
+    margin: 10px auto;
+    background: rgba(255, 255, 255, 0.38);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.7px);
+    -webkit-backdrop-filter: blur(9.7px);
+    border: 1px solid rgba(255, 255, 255, 0.31);
+    padding: 5px;
+}
+
+.width-tabela {
+    width: 350px;
+}
+
+.table th a {
+    color: white;
+    text-decoration: none;
+    background-color: #0b5155;
+    padding: 1px 5px;
+    font-size: 16px;
+    border-radius: 20px;
+    float: right;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.info {
+    display: none;
+    position: absolute;
+    font-size: 50px;
+    z-index: 1;
+    width: 300px;
+    height: 370px;
+    margin-top: 40px;
+    margin-left: 30px;
+    background: rgba(71, 56, 56, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid rgba(71, 56, 56, 0.3);
+}
+
+.info-9 {
+    margin-left: 450px;
+    margin-top: -10px;
+}
+
+.botao-info9 {
+    color: white;
+    text-decoration: none;
+    background-color: #0b5155;
+    padding: 1px 5px;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.table span {
+    float: right;
+}
+
+.titulo-tabela {
+    margin: 10px 1px;
+    font-size: 32PX;
+    background-color: #0b5155;
+    color: #ffff;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    transition: 1s;
+    padding: 8px 20px;
+    margin-top: 40PX;
+}
+
+.titulo-tabela:hover {
+    scale: 1.1;
+}
+
+
+.titulo-tabela img {
+    padding-top: 15px;
+    width: 30px;
+}
+
+
+
+.table td {
+    padding-top: 20px;
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+.table td>b {
+    background-color: rgb(29, 201, 138, 0.2);
+    color: #291F1F;
+    border-radius: 6px;
+    padding: 0 3px;
+}
+
+
+.anexos {
+    float: left;
+    margin: 0 10px;
+
+}
+
+.anexos-terreno {
+    float: left;
+    margin: 0 10px;
+
+}
+
+.anexos h2 {
+    background-color: #1dc98a;
+    border-radius: 6px;
+    font-size: 1.17em;
+    text-align: center;
+    margin-bottom: -5px;
+    color: white;
+}
+
+.table th {
+    background-color: #1dc98a;
+    color: white;
+
+}
+
+
+.edificacao h3 {
+    text-align: center;
+}
+
+.info-ed .anexos {
+    margin: 0 25px;
+}
+
+.anexos p {
+    border: 1px solid black;
+    padding: 2px;
+    margin: 0;
+}
+
+footer {
+    background-color: #004348;
+    height: 200px;
+    text-align: center
+}
+
+footer img {
+    margin-top: 50px;
+}
+
+.acesso {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+}
+
+.acesso .botao {
+    width: 200px;
+}
+
+.acesso input {
+    width: 240px;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 1380px) {
+    .anexos {
+        float: none;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .anexos-terreno {
+        float: none;
+    }
+
+    .table {
+        margin-bottom: 40px;
+        width: 400px;
+    }
+
+    .info {
+        margin-left: 30px;
+        height: 350px;
+    }
+
+    .width-tabela {
+        width: auto;
+    }
+}
