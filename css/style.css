@@ -32,6 +32,9 @@ body {
     padding-bottom: 20px;
 }
 
+
+
+
 .botao {
     font-size: 24px;
     text-decoration: none;
@@ -45,7 +48,7 @@ body {
 }
 
 .botao:hover {
-    padding: 8px 25px;
+    scale: 1.1;
 }
 
 .info-cabecalho {
@@ -85,23 +88,24 @@ body {
 .info {
     display: none;
     position: absolute;
-    font-size: 50px;
     z-index: 1;
-    width: 300px;
-    height: 370px;
+    padding: 10px;
     margin-top: 40px;
-    margin-left: 30px;
-    background: rgba(71, 56, 56, 0);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.8px);
-    -webkit-backdrop-filter: blur(5.8px);
-    border: 1px solid rgba(71, 56, 56, 0.3);
 }
 
 .info-9 {
-    margin-left: 450px;
+    margin-left: 400px;
     margin-top: -10px;
+
+}
+
+.info-3 {
+    margin-left: -200px !important;
+}
+
+.info img {
+    border-radius: 6px;
+
 }
 
 .botao-info9 {
@@ -112,15 +116,43 @@ body {
     font-size: 16px;
     border-radius: 20px;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .table span {
     float: right;
 }
 
+
+
+.titulos {
+    width: 100%;
+    display: inline-flex;
+}
+
+.end-imovel {
+    margin: 10px 0px;
+    background-color: #0b5155;
+    color: #ffff;
+    cursor: pointer;
+    text-align: center;
+    transition: 1s;
+    padding: 8px 0px;
+    margin-top: 40PX;
+    font-size: 20px;
+}
+
+.end-imovel:first-child {
+    width: 30%
+}
+
+.end-imovel:last-child {
+    width: 70%;
+}
+
 .titulo-tabela {
     margin: 10px 1px;
-    font-size: 32PX;
+    font-size: 20px;
     background-color: #0b5155;
     color: #ffff;
     border-radius: 6px;
@@ -129,10 +161,8 @@ body {
     transition: 1s;
     padding: 8px 20px;
     margin-top: 40PX;
-}
+    width: 100%;
 
-.titulo-tabela:hover {
-    scale: 1.1;
 }
 
 
@@ -156,6 +186,15 @@ body {
     color: #291F1F;
     border-radius: 6px;
     padding: 0 3px;
+    font-size: 16px;
+}
+
+.table td>span {
+    font-size: 14px;
+}
+
+.table td>p {
+    font-size: 16px;
 }
 
 
@@ -183,13 +222,20 @@ body {
 .table th {
     background-color: #1dc98a;
     color: white;
-
+    font-size: 16px;
+    border-radius: 6px;
 }
 
+.titulo-ed {
+    width: 100%;
+}
 
 .edificacao h3 {
     text-align: center;
+    margin-bottom: 20px;
 }
+
+
 
 .info-ed .anexos {
     margin: 0 25px;
@@ -211,22 +257,7 @@ footer img {
     margin-top: 50px;
 }
 
-.acesso {
-    display: flex;
-    flex-direction: column;
-    margin: 0 50px;
-}
 
-.acesso .botao {
-    width: 200px;
-}
-
-.acesso input {
-    width: 240px;
-    border-radius: 6px;
-    border: none;
-    padding: 10px;
-}
 
 
 @media screen and (max-width: 1380px) {
@@ -252,5 +283,27 @@ footer img {
 
     .width-tabela {
         width: auto;
+    }
+
+    .titulos {
+        width: 100%;
+        display: block;
+    }
+
+    .end-imovel {
+        margin: 0;
+    }
+
+    .end-imovel:first-child {
+        margin-top: 20px;
+        width: 100%
+    }
+
+    .end-imovel:last-child {
+        width: 100%;
+    }
+
+    .info-3 {
+        margin-left: 0 !important;
     }
 }

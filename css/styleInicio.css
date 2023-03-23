@@ -1,0 +1,64 @@
+.acesso {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menu-acesso {
+    background-color: #b3c2cd;
+    display: flex;
+    border-radius: 6px;
+}
+
+.acesso-texto {
+    width: 400px;
+    margin-right: 50px;
+    text-align: justify;
+    padding: 20px;
+
+}
+
+
+
+.acesso .botao {
+    width: 200px;
+}
+
+.acesso input {
+    width: 240px;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+}
+
+.flex {
+    text-align: right;
+}
+
+.acesso-entrar {
+    display: flex;
+    flex-direction: column;
+    background-color: #c5d1da;
+    align-items: end;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.acesso-entrar h2 {
+    margin-bottom: 50px;
+    font-size: 18px;
+    background-color: #095b60;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.botaoAcesso {
+    margin-top: -10px;
+    font-size: 18px;
+}

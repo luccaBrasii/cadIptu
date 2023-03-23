@@ -1,17 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/styleInicio.css" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
+    <header class="center cabecalho2">
+        <div>
+            <img src="./images/logo.png">
+        </div>
+        <div class="cabecalho">
+            <div class="info-cabecalho flex">
+                <h3>Secretaria de Finanças</h3>
+                <h4>Cadastro Imobiliário</h4>
+                <p>Consulta</p>
+            </div>
+        </div>
+    </header>
+
+
     <section class="acesso">
-        <h2>Simulador de IPTU</h2>
-        <input required type="text" placeholder="Inscrição do Imóvel"><br>
-        <a class='botao' href="index.html">PESQUISAR</a>
+        <div class="menu-acesso">
+            <div class="acesso-texto">
+                <b>Senhor(a) Contribuinte,</b>
+
+                <p>A Prefeitura de Goiânia, através da Secretaria de Finanças, disponibiliza as informações sobre o seu
+                    imóvel no Cadastro Imobiliário Municipal. </p>
+                <p>Caso as informações estejam desatualizadas, favor
+                    dirigir-se a uma de nossas Agências de Múltiplo Atendimento para solicitar a atualização, munido do
+                    documento do imóvel (Escritura Pública de Compra e Venda, Contrato Particular de Compra e Venda ou
+                    Cessão de Direito), Carteira de Identidade e CNPJ/CPF.</p>
+                <p style="margin-top: 20px;">Informe a Inscrição Cadastral do imóvel e aperte o botão "Consultar".</p>
+            </div>
+            <div class="acesso-entrar">
+                <h2>CADASTRO IMOBILIÁRIO</h2>
+                <input required type="text" placeholder="Inscrição cadastral"><br>
+                <a class='botao botaoAcesso' href="index.html">Consultar</a>
+            </div>
+        </div>
     </section>
 </body>
+
 </html>
