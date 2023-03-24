@@ -9,7 +9,13 @@ tabela = {
     cinco: function () { $('.info-5').fadeToggle() },
     seis: function () { $('.info-6').fadeToggle() },
     sete: function () { $('.info-7').fadeToggle() },
-    oito: function () { $('.info-8').fadeToggle() }
+    oito: function () { $('.info-8').fadeToggle() },
+    dez: function () { $('.info10').fadeToggle() },
+    onze: function () { $('.info11').fadeToggle() },
+    doze: function () { $('.info12').fadeToggle() },
+    treze: function () { $('.info13').fadeToggle() },
+    quatorze: function () { $('.info14').fadeToggle() },
+    quinze: function () { $('.info15').fadeToggle() }
 }
 
 //FECHAR DIVS
@@ -40,10 +46,13 @@ $('.botao-info9').click((e) => {
 });
 
 $('body').click(() => {
+    $('.infoLei').fadeOut()
     $('.info').fadeOut()
+    $('.info-9').fadeOut()
 })
 
 //PARA NAO FECHAR A JANELA QUANDO CLICAR NO 'i'
+
 table.click((e) => {
     e.stopPropagation()
 })
