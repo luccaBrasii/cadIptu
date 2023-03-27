@@ -22,7 +22,7 @@ tabela = {
 
 
 //PEGA TODOS 'LINKS' DOS 'TÍTULOS' DO ANEXO
-table = $('.table a')
+table = $('.table img')
 
 //PERCORRE TODOS OS LINKS 
 $(table).each(function () {
@@ -40,7 +40,7 @@ $(table).each(function () {
 });
 
 //ANEXO 9 - INFORMAÇÕES SOBRE A EDIFICAÇÃO - obs: esse tive que fazer fora do objeto pois ele não é um link
-$('.botao-info9').click((e) => {
+$('.botaoInfo').click((e) => {
     e.stopPropagation()
     $('.info-9').fadeToggle();
 });
@@ -48,6 +48,7 @@ $('.botao-info9').click((e) => {
 $('body').click(() => {
     $('.infoLei').fadeOut()
     $('.info').fadeOut()
+    $('.outrasInfo').fadeOut()
     $('.info-9').fadeOut()
 })
 
