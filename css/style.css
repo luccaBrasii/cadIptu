@@ -175,22 +175,24 @@ body {
 }
 
 .info-7 {
-    margin-left: -610px;
-    width: 600px !important;
+    margin-left: -500px;
+
 }
 
 .info-9 {
     display: none;
     z-index: 1;
-    margin-top: 20px;
+    margin: 20px auto;
     background-color: white;
     overflow: hidden;
     transition: 1s;
     border-radius: 6px;
+    width: 384px;
 }
 
 .info-9 iframe {
     height: 100vh;
+    width: 100%;
 }
 
 .info10 {
@@ -412,7 +414,7 @@ footer h3 {
     position: absolute;
     left: 0;
     margin-top: 200px;
-    color: rgba(255, 255, 255, 0.02);
+    color: rgba(255, 255, 255, 0.01);
 }
 
 
@@ -487,5 +489,29 @@ footer h3 {
     .info-calculo {
         flex-direction: column;
         align-items: center;
+    }
+
+    .info-4 {
+        margin-left: -20px;
+        margin-top: 180px;
+        width: 450px;
+    }
+
+    .info-5 {
+        margin-left: -20px;
+        margin-top: 140px;
+        width: 450px;
+    }
+
+    .info-6 {
+        margin-left: -20px;
+        margin-top: 180px;
+        width: 450px;
+    }
+
+    .info-7 {
+        margin-left: -20px;
+        margin-top: 180px;
+        width: 450px;
     }
 }
