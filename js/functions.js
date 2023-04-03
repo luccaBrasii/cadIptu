@@ -16,6 +16,7 @@ tabela = {
     treze: function () { $('.info13').fadeToggle() },
     quatorze: function () { $('.info14').fadeToggle() },
     quinze: function () { $('.info15').fadeToggle() }
+
 }
 
 //FECHAR DIVS
@@ -45,11 +46,17 @@ $('.botaoInfo').click((e) => {
     $('.info-9').fadeToggle();
 });
 
+$('.infoAcesso').click((e) => {
+    e.stopPropagation()
+    $('.info16').fadeToggle();
+});
+
 $('body').click(() => {
     $('.infoLei').fadeOut()
     $('.info').fadeOut()
     $('.outrasInfo').fadeOut()
     $('.info-9').fadeOut()
+    $('.info16').fadeToggle();
 })
 
 //PARA NAO FECHAR A JANELA QUANDO CLICAR NO 'i'
